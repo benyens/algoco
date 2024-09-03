@@ -38,3 +38,8 @@ vector<vector<int>> multiplicacionMatrices(const vector<vector<int>>& A, const v
 }
 
 // Implementa el algoritmo de Strassen aquí...
+
+vector<vector<int>> strassen(const vector<vector<int>>& A, const vector<vector<int>>& B) {
+    // Implementación de Strassen
+    return A;
+}   

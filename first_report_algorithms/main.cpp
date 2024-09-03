@@ -25,6 +25,20 @@ int main() {
     chrono::duration<double> duracion = fin - inicio;
     cout << "Selection Sort duró " << duracion.count() << " segundos.\n";
 
+    // Benchmarking de mergeSort
+    auto inicio = chrono::high_resolution_clock::now();
+    mergeSort(listaMiddle, 0, listaMiddle.size() - 1); // Para lista medianamente ordenada (40% ordenada)
+    auto fin = chrono::high_resolution_clock::now();
+    chrono::duration<double> duracion = fin - inicio;
+    cout << "Merge Sort duró " << duracion.count() << " segundos.\n";
+
+    // Benchmarking de quickSort
+    auto inicio = chrono::high_resolution_clock::now();
+    quickSort(listaMiddle, 0, listaMiddle.size() - 1); // Para lista medianamente ordenada (40% ordenada)
+    auto fin = chrono::high_resolution_clock::now();
+    chrono::duration<double> duracion = fin - inicio;
+    cout << "Quick Sort duró " << duracion.count() << " segundos.\n";
+
     // Benchmarking de la multiplicación de matrices
     inicio = chrono::high_resolution_clock::now();
     auto resultado = multiplicacionMatrices(squareMatrix, rectangularMatrix);
@@ -32,5 +46,12 @@ int main() {
     duracion = fin - inicio;
     cout << "Multiplicación de matrices duró " << duracion.count() << " segundos.\n";
 
+    // Benchmarking de Strassen
+    inicio = chrono::high_resolution_clock::now();
+    auto resultadoStrassen = strassen(squareMatrix, rectangularMatrix);
+    fin = chrono::high_resolution_clock::now();
+    duracion = fin - inicio;
+    cout << "Strassen duró " << duracion.count() << " segundos.\n";
+    
     return 0;
 }
