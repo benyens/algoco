@@ -6,3 +6,8 @@
     ```
     g++ -o benchmark main.cpp lectura_datos.cpp algoritmos.cpp
     ```
+
+* _Ejecutar_
+    ```
+    ./benchmark
+    ```
