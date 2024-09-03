@@ -8,7 +8,7 @@ def generate_rectagular_matrix(row, column, mrange):
     return np.random.randint(0, mrange, size=(row, column))
 
 def save_matrix(matrix, name):
-    np.savetext(name, matrix, delimiter=',')
+    np.savetxt(name, matrix, delimiter=',')
 
 
 square_matrix = generate_square_matrix(100, 100)

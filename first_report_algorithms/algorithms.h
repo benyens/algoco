@@ -1,0 +1,15 @@
+#ifndef algorithms.h
+#define algorithms.h
+#include <vector>
+
+using namespace std;
+
+void selectionSort(std::vector<int>& arr);
+void mergeSort(std::vector<int>& arr, int left, int right);
+void quickSort(std::vector<int>& arr, int low, int high);
+
+
+vector<vector<int>> multiplicacionMatrices(const vector<vector<int>>& A, const vector<vector<int>>& B);
+vector<vector<int>> strassen(const vector<vector<int>>& A, const vector<vector<int>>& B);
+
+#endif
