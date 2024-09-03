@@ -7,14 +7,16 @@ using namespace std;
 
 int main() {
     // Leer lista desde CSV
-    string archivoLista = "dataset.csv";
+    string archivoLista = "unsorted.csv";
+    string archivoListaMiddle = "sorted_middle.csv";
     vector<int> lista = leerListaDesdeCSV(archivoLista);
+    vector<int> listaMiddle = leerListaDesdeCSV(archivoListaMiddle);
 
     // Leer matrices desde CSV
-    string archivoMatrizA = "square_matrix.csv";
-    string archivoMatrizB = "rectangular_matrix.csv";
-    vector<vector<int>> matrizA = leerMatrizDesdeCSV(archivoMatrizA);
-    vector<vector<int>> matrizB = leerMatrizDesdeCSV(archivoMatrizB);
+    string squareMatrixCSV = "square_matrix.csv";
+    string rectangularMatrixCSV = "rectangular_matrix.csv";
+    vector<vector<int>>  squareMatrix = leerMatrizDesdeCSV(squareMatrixCSV);
+    vector<vector<int>> rectangularMatrix = leerMatrizDesdeCSV(rectangularMatrixCSV);
 
     // Benchmarking de un algoritmo de ordenamiento (por ejemplo, Selection Sort)
     auto inicio = chrono::high_resolution_clock::now();
@@ -25,7 +27,7 @@ int main() {
 
     // Benchmarking de la multiplicación de matrices
     inicio = chrono::high_resolution_clock::now();
-    auto resultado = multiplicacionMatrices(matrizA, matrizB);
+    auto resultado = multiplicacionMatrices(squareMatrix, rectangularMatrix);
     fin = chrono::high_resolution_clock::now();
     duracion = fin - inicio;
     cout << "Multiplicación de matrices duró " << duracion.count() << " segundos.\n";
