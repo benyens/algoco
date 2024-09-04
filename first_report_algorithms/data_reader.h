@@ -8,5 +8,6 @@ using namespace std;
 
 vector<int> leerListaDesdeCSV(const string& nombreArchivo);
 vector<vector<int>> leerMatrizDesdeCSV(const string& nombreArchivo);
+void guardarListaEnCSV(const vector<int>& lista, const string& nombreArchivo);
 
 #endif

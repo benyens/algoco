@@ -50,3 +50,19 @@ vector<vector<int>> leerMatrizDesdeCSV(const string& nombreArchivo) {
 
     return matriz;
 }
+
+void guardarListaEnCSV(const std::vector<int>& lista, const std::string& nombreArchivo) {
+    ofstream archivo(nombreArchivo);
+
+    if (archivo.is_open()) {
+        for (size_t i = 0; i < lista.size(); ++i) {
+            archivo << lista[i];
+            if (i < lista.size() - 1) {
+                archivo << ",";
+            }
+        }
+        archivo.close();
+    } else {
+        cerr << "No se pudo abrir el archivo " << nombreArchivo << endl;
+    }
+}

@@ -1,5 +1,5 @@
-#ifndef algorithms.h
-#define algorithms.h
+#ifndef algorithms_H
+#define algorithms_H
 #include <vector>
 
 using namespace std;
@@ -12,4 +12,4 @@ void quickSort(std::vector<int>& arr, int low, int high);
 vector<vector<int>> multiplicacionMatrices(const vector<vector<int>>& A, const vector<vector<int>>& B);
 vector<vector<int>> strassen(const vector<vector<int>>& A, const vector<vector<int>>& B);
 
-#endif
+#endif 
