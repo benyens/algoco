@@ -4,17 +4,17 @@
 
 
     
-* _Compilación_
+* _Compilación:_
     ```
     g++ -pg -o benchmark main.cpp data_reader.cpp algorithms.cpp -std=c++17 
     ```
 
-* _Ejecutar_
+* _Ejecutar:_
     ```
     ./benchmark
     ```
 
-* _Profiling_
+* _Profiling:_
     ```
     valgrind --tool=massif ./benchmark
     ```
@@ -22,7 +22,7 @@
     ```
     ms_print massif.out.<número> # El número es el que tiene el archivo al ocupar massif en el valgrind 
 
-* _Generar reporte_
+* _Generar reporte:_
     ```
     gprof ./benchmark gmon.out > analysis.txt
     ```

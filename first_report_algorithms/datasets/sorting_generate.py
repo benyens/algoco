@@ -16,9 +16,14 @@ def save_list(listaa, name):
         writer = csv.writer(file)
         writer.writerow(listaa)
 
-lista = generate_random_list(10**6, 10**4)
-save_list(lista, 'unsorted.csv')
+lista = generate_random_list(10**4, 10**4)
+save_list(lista, 'unsorted10^4.csv')
 
-lista_middle = generate_middle_sorted_list(10**6, 0.4) # 40% sorted
-save_list(lista_middle, 'sorted_middle.csv')
+lista_middle = generate_middle_sorted_list(10**4, 0.4) # 40% sorted
+save_list(lista_middle, 'sorted_middle10^4.csv')
 
+lista = generate_random_list(10**5, 10**4)
+save_list(lista, 'unsorted10^5.csv')
+
+lista_middle = generate_middle_sorted_list(10**5, 0.6) # 60% sorted
+save_list(lista_middle, 'sorted_middle10^5.csv')

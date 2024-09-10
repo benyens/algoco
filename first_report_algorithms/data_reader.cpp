@@ -3,6 +3,7 @@
 #include <fstream>
 #include <sstream>
 
+
 using namespace std;
 
 vector<int> leerListaDesdeCSV(const string& nombreArchivo) {
@@ -64,5 +65,35 @@ void guardarListaEnCSV(const std::vector<int>& lista, const std::string& nombreA
         archivo.close();
     } else {
         cerr << "No se pudo abrir el archivo " << nombreArchivo << endl;
+    }
+}
+
+void guardarMatrizEnCSV(const vector<vector<int>>& matriz, const string& nombreArchivo) {
+    ofstream archivo(nombreArchivo);
+
+    if (archivo.is_open()) {
+        for (const auto& fila : matriz) {
+            for (size_t i = 0; i < fila.size(); ++i) {
+                archivo << fila[i];
+                if (i < fila.size() - 1) {
+                    archivo << ",";
+                }
+            }
+            archivo << "\n";
+        }
+        archivo.close();
+    } else {
+        cerr << "No se pudo abrir el archivo " << nombreArchivo << endl;
+    }
+}
+
+void guardarAlgoritmosEnCSV(const string& nombreAlgoritmo, double tiempoEjecucion, const string& archivoSalida) {
+    ofstream file;
+    file.open(archivoSalida, ios::app); // Para que no se sobreescriba el archivo.
+    if (file.is_open()) {
+        file << nombreAlgoritmo << "," << tiempoEjecucion << "\n";
+        file.close();
+    } else {
+        cerr << "No se pudo abrir el archivo " << archivoSalida << endl;
     }
 }

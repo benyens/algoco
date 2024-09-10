@@ -1,0 +1,6 @@
+Nombre del Algoritmo,Tiempo de Ejecución (segundos)
+Matrix Multiplication Rectangular,0.0665219
+Matrix Multiplication Square,0.0351422
+Matrix Multiplication Rectangular Optimized,0.0681147
+Matrix Multiplication Square Optimized,0.0354799
+Strassen,0.725122

@@ -10,6 +10,7 @@ void quickSort(std::vector<int>& arr, int low, int high);
 
 
 vector<vector<int>> multiplicacionMatrices(const vector<vector<int>>& A, const vector<vector<int>>& B);
+vector<vector<int>> multiplicacionMatricesOptimizada(const vector<vector<int>>& A, const vector<vector<int>>& B);
 vector<vector<int>> strassen(const vector<vector<int>>& A, const vector<vector<int>>& B);
 
 #endif 

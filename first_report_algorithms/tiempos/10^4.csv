@@ -1,0 +1,9 @@
+Nombre del Algoritmo,Tiempo de Ejecución (segundos)
+Selection Sort Unsorted 10^4,0.609794
+Selection Sort Middle Sorted 10^4,0.623189
+Merge Sort Unsorted 10^4,0.0105046
+Merge Sort Middle Sorted 10^4,0.0136537
+Quick Sort Unsorted 10^4,0.00330051
+Quick Sort Middle Sorted 10^4,0.00344685
+Sort C++ Unsorted 10^4,0.00525809
+Sort C++ Middle Sorted 10^4,0.00477289
