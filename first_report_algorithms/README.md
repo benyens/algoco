@@ -4,18 +4,18 @@ Este proyecto implementa varios algoritmos de ordenamiento y técnicas de manejo
 
 ## Estructura del proyecto
 
-- `main.cpp`: Contiene el punto de entrada principal del programa.
-- `algorithms.cpp`: Implementaciones de los algoritmos de ordenamiento.
-- `algorithms.h`: Contiene las definiciones y estrucuturas de los algoritmos implementados en `algorithms.cpp` .
-- `data_reader.cpp`: Funciones para la lectura y escritura de archivos CSV.
--  `data_reader.h`: Contiene las definiciones de las funciones implementadas en `data_reader.cpp`
-- `algorithmAnalysis.py`: Función para leer, analizar y graficar los datos.
-- `makefile`: Archivo de construcción para compilar el proyecto.
-- `/bin/`: Directorio donde se generan los ejecutables.
-- `/visuals/`: Directorio donde se guardan los gráficos.
-- `/datasets/`: Directorio que contiene el código generador de datasets y los datasets.
-- `/resultados/`: Directorio que contiene los resultados entregados por los algoritmos al ser ejecutados.
-- `/tiempos/`: Directorio que guarda los nombre y tiempos obtenidos por cada algoritmo.
+- **`main.cpp`**: Contiene el punto de entrada principal del programa.
+- **`algorithms.cpp`**: Implementaciones de los algoritmos de ordenamiento.
+- **`algorithms.h`**: Contiene las definiciones y estrucuturas de los algoritmos implementados en `algorithms.cpp` .
+- **`data_reader.cpp`**: Funciones para la lectura y escritura de archivos CSV.
+-  **`data_reader.h`**: Contiene las definiciones de las funciones implementadas en `data_reader.cpp`
+- **`algorithmAnalysis.py`**: Función para leer, analizar y graficar los datos.
+- **`makefile`**: Archivo de construcción para compilar el proyecto.
+- **`/bin/`**: Directorio donde se generan los ejecutables.
+- **`/visuals/`**: Directorio donde se guardan los gráficos.
+- **`/datasets/`**: Directorio que contiene el código generador de datasets y los datasets.
+- **`/resultados/`**: Directorio que contiene los resultados entregados por los algoritmos al ser ejecutados.
+- **`/tiempos/`**: Directorio que guarda los nombre y tiempos obtenidos por cada algoritmo.
 
 
 ## Requisitos
@@ -41,26 +41,26 @@ Para compilar el proyecto, sigue estos pasos:
 2. 
     * 2.1. **Para compilar y correr el código entero puedes utilizar los siguientes comandos:**
 
-        # Compilación
+        ### Compilación
             ```bash
             make run_all
             ```
         
-        # Ejecutar
+        #### Ejecutar
             ```bash
             make all
             ```
 
     * 2.2. **Para compilar y correr cada algoritmo por separado (No recomendado) puedes utilizar los siguientes comandos::**
 
-        # Compilación
+        ### Compilación
             ```bash
             make <nombre_alg>_10_<4,5> # Para algoritmos de ordenamiento.
             make matrix_multiplication_<rectangular, square> # Para matrices (Si se quiere correr el optimizado se debe colocar `_optimized` al final)
             make matrix strassen # Para correr el Algoritmo de Strassen
             ```
 
-        # Ejecutar
+        ### Ejecutar
             ```bash
             ./bin/<nombre_alg>_10_<4,5>
             ./bin/matrix_multiplication_<rectangular, square>
@@ -79,9 +79,9 @@ Para compilar el proyecto, sigue estos pasos:
         ```
 
 
-    *3.2 **Generar reporte:**
+    * 3.2 **Generar reporte:**
         ```bash
         gprof .bin/run_all gmon.out > analysys.txt
         ```
 
-# Muchas gracias por revisar el proyecto
+## Muchas gracias por revisar el proyecto.
