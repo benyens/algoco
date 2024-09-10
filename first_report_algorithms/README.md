@@ -38,7 +38,7 @@ Para compilar el proyecto, sigue estos pasos:
    sudo apt-get install g++ make
    ```
 
-2. 
+2. **Para empezar a compilar:**
     - 2.1. **Para compilar y correr el código entero puedes utilizar los siguientes comandos:**
 
         ### Compilación
