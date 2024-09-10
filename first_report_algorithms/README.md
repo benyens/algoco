@@ -39,19 +39,19 @@ Para compilar el proyecto, sigue estos pasos:
    ```
 
 2. 
-    * 2.1. **Para compilar y correr el código entero puedes utilizar los siguientes comandos:**
+    - 2.1. **Para compilar y correr el código entero puedes utilizar los siguientes comandos:**
 
         ### Compilación
-            ```bash
+            ```
             make run_all
             ```
         
         #### Ejecutar
-            ```bash
+            ```
             make all
             ```
 
-    * 2.2. **Para compilar y correr cada algoritmo por separado (No recomendado) puedes utilizar los siguientes comandos::**
+    - 2.2. **Para compilar y correr cada algoritmo por separado (No recomendado) puedes utilizar los siguientes comandos::**
 
         ### Compilación
             ```bash
@@ -61,7 +61,7 @@ Para compilar el proyecto, sigue estos pasos:
             ```
 
         ### Ejecutar
-            ```bash
+            ```
             ./bin/<nombre_alg>_10_<4,5>
             ./bin/matrix_multiplication_<rectangular, square>
             ./bin/matrix strassen
@@ -69,17 +69,17 @@ Para compilar el proyecto, sigue estos pasos:
 
 3. **Si desea observar el uso de memoria y generar reportes (No es fundamental para este proyecto), puede utilizar los siguientes comandos:**
     
-    * 3.1 **Uso del valgrind:** 
-        ```bash
+    - 3.1 **Uso del valgrind:** 
+        ```
         valgrind --tool=massif .bin/run_all
         ```
-    * 3.1.2 **Analizar el archivo creado:**
+    - 3.1.2 **Analizar el archivo creado:**
         ```bash
         ms_print massif.out.<número> # El número es el que tiene el archivo al ocupar massif en el valgrin
         ```
 
 
-    * 3.2 **Generar reporte:**
+    - 3.2 **Generar reporte:**
         ```bash
         gprof .bin/run_all gmon.out > analysys.txt
         ```
