@@ -2,6 +2,7 @@
 
 Este proyecto implementa varios algoritmos de ordenamiento y técnicas de manejo de archivos CSV para la lectura y escritura de datos. El código está escrito en C++ y se utiliza un `makefile` para simplificar el proceso de compilación. Para la generación de Datasets se ocupa código escrito en Python que ese encuentra en `/datasets/`.
 
+
 ## Estructura del proyecto
 
 - **`main.cpp`**: Contiene el punto de entrada principal del programa.

@@ -10,9 +10,9 @@ df4 = pd.read_csv(archivo4)
 df5 = pd.read_csv(archivo5)
 dfMatrix = pd.read_csv(archivoMatrix)
 
-def showplt(df, title, xlabel, ylabel, rotation):
+def showplt(df, title, xlabel, ylabel, rotation, color):
     plt.figure(figsize=(12, 8))
-    plt.bar(df['Nombre del Algoritmo'], df['Tiempo de Ejecución (segundos)'], color='green')
+    plt.bar(df['Nombre del Algoritmo'], df['Tiempo de Ejecución (segundos)'], color=color)
     plt.title(title)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
@@ -21,6 +21,6 @@ def showplt(df, title, xlabel, ylabel, rotation):
     plt.savefig('visuals/' + title)
     plt.show()
 
-showplt(df4, 'Tiempos de Ejecución de Algoritmos con 10^4 Elementos', 'Algoritmos', 'Tiempo de Ejecución (segundos)', 80)
-showplt(df5, 'Tiempos de Ejecución de Algoritmos con 10^5 Elementos', 'Algoritmos', 'Tiempo de Ejecución (segundos)', 80)
-showplt(dfMatrix, 'Tiempos de Ejecución de Algoritmos con Matrices', 'Algoritmos', 'Tiempo de Ejecución (segundos)', 45)
+showplt(df4, 'Tiempos de Ejecución de Algoritmos con 10^4 Elementos', 'Algoritmos', 'Tiempo de Ejecución (segundos)', 80, 'green')
+showplt(df5, 'Tiempos de Ejecución de Algoritmos con 10^5 Elementos', 'Algoritmos', 'Tiempo de Ejecución (segundos)', 80, 'blue')
+showplt(dfMatrix, 'Tiempos de Ejecución de Algoritmos con Matrices', 'Algoritmos', 'Tiempo de Ejecución (segundos)', 45, 'purple')
