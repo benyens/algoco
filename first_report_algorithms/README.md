@@ -2,7 +2,6 @@
 
 Este proyecto implementa varios algoritmos de ordenamiento y técnicas de manejo de archivos CSV para la lectura y escritura de datos. El código está escrito en C++ y se utiliza un `makefile` para simplificar el proceso de compilación. Para la generación de Datasets se ocupa código escrito en Python que ese encuentra en `/datasets/`.
 
-
 ## Estructura del proyecto
 
 - **`main.cpp`**: Contiene el punto de entrada principal del programa.
@@ -42,31 +41,31 @@ Para compilar el proyecto, sigue estos pasos:
 2. **Para empezar a compilar:**
     - 2.1. **Para compilar y correr el código entero puedes utilizar los siguientes comandos:**
 
-        ### Compilación
-            ```
-            make run_all
-            ```
+      * Compilación
+      ```
+      make run_all
+      ```
         
-        #### Ejecutar
-            ```
-            make all
-            ```
+      * Ejecutar
+      ```
+      make all
+      ```
 
     - 2.2. **Para compilar y correr cada algoritmo por separado (No recomendado) puedes utilizar los siguientes comandos::**
 
-        ### Compilación
-            ```bash
-            make <nombre_alg>_10_<4,5> # Para algoritmos de ordenamiento.
-            make matrix_multiplication_<rectangular, square> # Para matrices (Si se quiere correr el optimizado se debe colocar `_optimized` al final)
-            make matrix strassen # Para correr el Algoritmo de Strassen
-            ```
+      - Compilación
+      ```bash
+      make <nombre_alg>_10_<4,5> # Para algoritmos de ordenamiento.
+      make matrix_multiplication_<rectangular, square> # Para matrices (Si se quiere correr el optimizado se debe colocar `_optimized` al final)
+      make matrix strassen # Para correr el Algoritmo de Strassen
+      ```
 
-        ### Ejecutar
-            ```
-            ./bin/<nombre_alg>_10_<4,5>
-            ./bin/matrix_multiplication_<rectangular, square>
-            ./bin/matrix strassen
-            ```
+      - Ejecutar
+      ```
+      ./bin/<nombre_alg>_10_<4,5>
+      ./bin/matrix_multiplication_<rectangular, square>
+      ./bin/matrix strassen
+      ```
 
 3. **Si desea observar el uso de memoria y generar reportes (No es fundamental para este proyecto), puede utilizar los siguientes comandos:**
     
